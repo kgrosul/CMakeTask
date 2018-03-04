@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_EXE lib.cpp)
 
-add_executable(lib ${SOURCE_EXE})
+add_library(lib.h lib.cpp)
