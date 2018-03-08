@@ -1,8 +1,0 @@
-f = open("A/index.h","w")
-f.write("#ifndef TP_INDEX_H\n#define TP_INDEX_H\n")
-f.write('#include "iostream"\n')
-f.write('void checkAfolder(){')
-f.write('\n    std::cout << "A is OK" << std::endl;')
-f.write('\n}')
-f.write('\n#endif')
-f.close()
