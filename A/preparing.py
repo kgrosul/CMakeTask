@@ -1,8 +1,20 @@
-f = open("A/index.h","w")
-f.write("#ifndef TP_INDEX_H\n#define TP_INDEX_H\n")
-f.write('#include "iostream"\n')
-f.write('void checkAfolder(){')
-f.write('\n    std::cout << "A is OK" << std::endl;')
-f.write('\n}')
-f.write('\n#endif')
-f.close()
+import sys
+
+
+program_text =  (
+"""
+#include <iostream>
+
+void checkAfolder() {
+    std::cout << "A is OK" << std::endl;
+}
+"""
+)
+
+
+print("Generating index.h from python3 ...")
+
+target = sys.argv[1]
+
+with open(target, "w") as lib_file:
+    lib_file.write(program_text.strip())

@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.2)
-
 set(CMAKE_CXX_STANDARD 11)
 
-project(TP)
+
+project(CMakeTask)
 
 execute_process(
-        COMMAND python3 A/preparing.py
+        COMMAND python3 ${PROJECT_SOURCE_DIR}/A/preparing.py ${PROJECT_SOURCE_DIR}/A/index.h
 )
 include_directories("${PROJECT_SOURCE_DIR}")
 
